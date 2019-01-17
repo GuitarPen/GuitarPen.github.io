@@ -1,0 +1,251 @@
+$contrast-color: #fff;
+$font-l: 20px;
+$font-m: 18px;
+$transition-normal: all 0.2s;
+$common-padding: 50px 4%;
+
+.content{
+	padding: $common-padding;
+	.content-title{
+		padding: 0 20%;
+		margin-bottom: 30px;	
+		&:before,&:after{
+			@include text-divider;
+		}
+		h2{
+			font-size: $font-l;
+			text-align: center;
+			line-height: 1.5em;
+		}
+	}
+	ul{
+		li{
+			width: 30%;
+			float: left;
+			text-align: center;
+			margin-right: 5%;
+			padding: 0 10px;
+			transition: $transition-normal;
+			&:last-of-type{
+				margin-right: 0;
+			}
+			img{
+				border-radius: 50%;
+				margin: 0 auto;
+			}
+			h3{
+				font-size: $font-m;
+				padding: 20px;
+			}
+			p{
+				text-align: justify;
+				line-height: 1.5em;
+			}
+		}
+	}
+	@include mobile(){
+		.content-title{
+			padding: 0;
+			display: block;
+			&:before,&:after{
+				display: none;
+			}
+		}
+		ul{
+			li{
+				float: none;
+				width: 100%;
+				padding: 0 10px 25px 10px;
+			}
+		}
+	}
+}
+
+.cook{
+	background: #3D1101;
+	color: $contrast-color;
+	padding: $common-padding;
+	padding-top: 0;
+	padding-bottom: 0;
+	.cook-img{
+		float: left;
+		background: url(../img/main_chef_brown.png) no-repeat;
+		background-position: right;
+		width: 50%;
+		height: 460px;
+		transition: $transition-normal;
+	}
+	.cook-text{
+		margin-left: 52%;
+		padding: 30px 0;
+		h2{
+			font-size: $font-l;
+			margin-bottom: 0.5em;
+		}
+		h3{
+			margin-bottom: 1.5em;
+		}
+		p{
+			line-height: 1.5em;
+		}
+	}
+	@include pad(){
+		.cook-img{
+			float: none;
+			width: 100%;
+			background-size: 100%;
+			background-position: top;
+		}
+		.cook-text{
+			margin-left: 0;
+		}
+	}
+	@include iphone(){
+		.cook-img{
+			background-size: cover;
+		}
+	}
+}
+
+.customer{
+	padding: $common-padding;
+	h2{
+		font-size: $font-l;
+		text-align: center;
+		margin-bottom: 30px;
+	}
+	ul{
+		li{
+			width: 32%;
+			float: left;
+			margin-right: 2%;
+			transition: $transition-normal;
+			&:last-of-type{
+				margin-right: 0;
+			}
+			img{
+				border-radius: 50%;
+				float: left;
+			}
+			h3{
+				margin-left: 80px;
+				line-height: 67px;
+			}
+			p{
+				margin-left: 80px;
+				text-align: justify;
+				line-height: 1.5em;
+			}
+			span{
+				display: block;
+				text-align: right;
+				margin-top: 16px;
+			}
+		}
+	}
+	@include mobile(){
+		ul{
+			li{
+				width: 100%;
+				margin-right: 0;
+			}
+		}
+	}
+}
+
+.contact{
+	background: #FAFAFA;
+	padding: $common-padding;
+	h2{
+		font-size: $font-l;
+		text-align: center;
+		line-height: 1.5em;
+		margin-bottom: 30px;
+	}
+	form{
+		.form-img{
+			float: left;
+			width: 50%;
+			overflow: hidden;
+			img{
+				height: 388px;
+				max-width: none;
+			}
+		}
+		.form-items{
+			margin-left: 52%;
+			label{
+				display: block;
+				margin-bottom: 6px;
+			}
+			label.vegetarian{
+				display: inline-block;
+				margin-right: 36px;
+				margin-top: 5px;
+			}
+			input.information{
+				padding: 8px;
+				width: 100%;
+				border-radius: 5px;
+				border: solid 1px #CCCCCC;
+				margin-bottom: 12px;
+				&:focus{
+					border: solid 1px #3D1101;
+				}
+			}
+			.radio{
+				display: block;
+			}
+			.button{
+				display: block;
+				margin-top: 3%;
+				float: right;
+				.pure-button{
+					&:focus{
+						background-image: none;
+					}
+				}
+			}
+			input[type=submit]{
+				margin-left: 10px;
+				color: white;
+				background-color: #a09e9e;
+				&:hover{
+					background-color: #878585;
+				}
+			}
+			input[type=submit]:last-of-type{
+				background-color: #F56C23;
+				&:hover{
+					background-color: #e06121;
+				}
+			}
+		}
+	}
+	@include mobile(){
+		form{
+			.form-img{
+				width: 100%;
+				float: none;
+				img{
+					width: 100%;
+					height: auto;
+				}
+			}
+			.form-items{
+				margin-left: 0;
+				margin-top: 5%;
+			}
+		}
+	}
+	@include iphone(){
+		form{
+			.form-img{
+				img{
+					height: 438px;
+					width: auto;
+				}
+			}
+		}
+	}
+}
