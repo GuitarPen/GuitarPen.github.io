@@ -1414,6 +1414,11 @@ a {
 .clearfix {
   clear: both; }
 
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both; }
+
 .overflow {
   overflow: hidden; }
 
@@ -1616,10 +1621,10 @@ body {
       margin-left: 20px; }
       .footer .footer-text ul li {
         margin-bottom: 0.5em; }
-    .footer .footer-text h1 {
+    .footer .footer-text .footer-logo {
       margin: 0;
       margin-bottom: 22px; }
-      .footer .footer-text h1 a {
+      .footer .footer-text .footer-logo a {
         text-indent: 110%;
         white-space: nowrap;
         overflow: hidden;
@@ -2024,7 +2029,7 @@ body {
 
 .login {
   padding: 50px 4%; }
-  .login h1 {
+  .login .login-logo {
     margin: 0;
     text-indent: 110%;
     white-space: nowrap;
@@ -2106,7 +2111,7 @@ body {
 
 .register {
   padding: 50px 4%; }
-  .register h1 {
+  .register .register-logo {
     margin: 0;
     text-indent: 110%;
     white-space: nowrap;
@@ -2136,35 +2141,35 @@ body {
       font-family: Noto Sans TC;
       font-size: 18px;
       text-align: center; }
-    .register .register-content .left, .register .register-content form {
+    .register .register-content .content-word .left, .register .register-content .content-word form {
       margin-top: 16px;
       width: 48.5%;
       -webkit-transition: all 0.2s;
       -o-transition: all 0.2s;
       transition: all 0.2s; }
-    .register .register-content .left {
+    .register .register-content .content-word .left {
       float: left; }
-      .register .register-content .left p {
+      .register .register-content .content-word .left p {
         line-height: 20px; }
-    .register .register-content form {
+    .register .register-content .content-word form {
       float: right; }
-      .register .register-content form label {
+      .register .register-content .content-word form label {
         display: block;
         margin-bottom: 6px; }
-      .register .register-content form .margin-top {
+      .register .register-content .content-word form .margin-top {
         margin-top: 4px; }
-      .register .register-content form input.account {
+      .register .register-content .content-word form input.account {
         padding: 5px;
         width: 100%;
         border-radius: 5px;
         border: solid 1px #CCCCCC;
         text-indent: 24px;
         margin-bottom: 12px; }
-        .register .register-content form input.account:focus {
+        .register .register-content .content-word form input.account:focus {
           border: solid 1px #3D1101; }
-      .register .register-content form .sign {
+      .register .register-content .content-word form .sign {
         position: relative; }
-        .register .register-content form .sign:before {
+        .register .register-content .content-word form .sign:before {
           position: absolute;
           font-family: "Font Awesome 5 Free";
           line-height: 33px;
@@ -2172,36 +2177,37 @@ body {
           text-align: center;
           font-size: 14px;
           left: 6px; }
-      .register .register-content form .i-email:before {
+      .register .register-content .content-word form .i-email:before {
         content: "\f0e0"; }
-      .register .register-content form .i-password:before {
+      .register .register-content .content-word form .i-password:before {
         content: "\f023";
         font-weight: 900; }
-      .register .register-content form a {
+      .register .register-content .content-word form a {
         display: block;
         color: #FF5E45;
         font-size: 14px;
         margin-top: -8px; }
-      .register .register-content form .button {
-        margin-top: 30px; }
-        .register .register-content form .button .pure-button:focus {
-          background-image: none; }
-        .register .register-content form .button input {
-          width: 46%;
-          height: 32px;
-          padding: 0;
-          color: white;
-          float: right;
-          background-color: #F56C23; }
-          .register .register-content form .button input:hover {
-            background-color: #e06121; }
+    .register .register-content .button {
+      margin-top: 30px; }
+      .register .register-content .button .pure-button:focus {
+        background-image: none; }
+      .register .register-content .button input {
+        width: 22%;
+        height: 32px;
+        padding: 0;
+        color: white;
+        float: right;
+        background-color: #F56C23; }
+        .register .register-content .button input:hover {
+          background-color: #e06121; }
     @media (max-width: 767px) {
       .register .register-content {
         width: 80%; }
-        .register .register-content .left, .register .register-content form {
+        .register .register-content .content-word .left, .register .register-content .content-word form {
           width: 100%;
-          float: none;
-          margin-bottom: 40px; } }
+          float: none; }
+        .register .register-content .button input {
+          width: 50%; } }
     @media (max-width: 480px) {
       .register .register-content {
         width: 100%; } }
