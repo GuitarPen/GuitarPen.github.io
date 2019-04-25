@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角血拼賣賣</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <h1 style="margin-top: 5.5px; margin-bottom: 5.5px;">
+            <a href="#" class="navbar-brand text-hide logo">OSAKE酒專賣</a>
+        </h1>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <div class="h4 mb-0">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <span class="badge badge-pill badge-danger">2</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px;">
+                <form class="px-4 py-3">
+                    <table class="table table-sm">
+                        <thead>
+                            <h6>已選擇商品</h6>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#" class="text-muted" data-toggle="modal" data-title="Japan Gekkeikan Sake"
+                                        data-target="#removeModal">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">Japan Gekkeikan Sake</td>
+                                <td class="align-middle" style="width:50px;">1 件</td>
+                                <td class="align-middle text-right">$2500</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#" class="text-muted" data-toggle="modal" data-title="Tokuri"
+                                        data-target="#removeModal">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">Tokuri</td>
+                                <td class="align-middle">1 組</td>
+                                <td class="align-middle text-right">$1000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="checkout.html" class="btn btn-primary btn-block">結帳去</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+            <div class="container text-white">
+                <div class="bg-black p-3">
+                    <h2 class="display-4">釀造的味道</h2>
+                    <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its
+                        parent.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="list-group sticky-top sakeList mb-5">
+                    <a href="#pane1" class="list-group-item list-group-item-action active" data-toggle="list">全部商品</a>
+                    <a href="#pane2" class="list-group-item list-group-item-action" data-toggle="list">日本酒</a>
+                    <a href="#pane3" class="list-group-item list-group-item-action" data-toggle="list">洋酒</a>
+                    <a href="#pane4" class="list-group-item list-group-item-action" data-toggle="list">啤酒</a>
+                    <a href="#pane5" class="list-group-item list-group-item-action" data-toggle="list">酒器</a>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <form action="" class="form-row">
+                    <div class="col-md-8 input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Search for...">
+                        <div class="input-group-append">
+                            <button type="submit" class="btn btn-outline-secondary">Search</button>
+                        </div>
+                    </div>
+                </form>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="pane1">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1544963492-2b63254a209f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Japan Gekkeikan Sake</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <a href="product.html"
+                                            class="btn btn-outline-secondary btn-block btn-sm">搶購去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1544002357-8a684ddf5938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80"
+                                        class="card-img-top" alt="套組">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Sake Group</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.
+                                            This content is a little bit longer.This is a wider card with supporting
+                                            text below
+                                            as a natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <a href="product.html"
+                                            class="btn btn-outline-secondary btn-block btn-sm">搶購去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1517620034968-c04439d3618f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80"
+                                        class="card-img-top" alt="紅酒">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Wind</h5>
+                                        <p class="card-text">This content is a little bit longer.a natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary">S</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">L</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1544984457-8cd3906d1392?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80"
+                                        class="card-img-top" alt="2件組">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Two Group</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <a href="product.html"
+                                            class="btn btn-outline-secondary btn-block btn-sm disabled">缺貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1525036193-2a8c23629266?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1875&q=80"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Corona Extra Beer</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content
+                                            lead-in to additional content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <a href="product.html"
+                                            class="btn btn-outline-secondary btn-block btn-sm disabled">缺貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1504502350688-00f5d59bbdeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Japan Beer</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.
+                                            This content is a little bit longer.This is a wider card with supporting
+                                            text below
+                                            as a natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary disabled">S</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">L</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1525974160448-038dacadcc71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80"
+                                        class="card-img-top" alt="杯具組">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Tokuri</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.
+                                            This content is a little bit longer.This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary disabled">S</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">M</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">L</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane2">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1544963492-2b63254a209f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Japan Gekkeikan Sake</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <a href="product.html"
+                                            class="btn btn-outline-secondary btn-block btn-sm">搶購去</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1544002357-8a684ddf5938?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80"
+                                        class="card-img-top" alt="套組">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Sake Group</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.
+                                            This content is a little bit longer.This is a wider card with supporting
+                                            text below
+                                            as a natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <a href="product.html"
+                                            class="btn btn-outline-secondary btn-block btn-sm">搶購去</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane3">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1517620034968-c04439d3618f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80"
+                                        class="card-img-top" alt="紅酒">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Wind</h5>
+                                        <p class="card-text">This content is a little bit longer.a natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary">S</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">L</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1544984457-8cd3906d1392?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1834&q=80"
+                                        class="card-img-top" alt="2件組">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Two Group</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <a href="product.html"
+                                            class="btn btn-outline-secondary btn-block btn-sm disabled">缺貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane4">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1525036193-2a8c23629266?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1875&q=80"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Corona Extra Beer</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural lead-in to additional content
+                                            lead-in to additional content.
+                                            This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <a href="product.html"
+                                            class="btn btn-outline-secondary btn-block btn-sm disabled">缺貨中</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1504502350688-00f5d59bbdeb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                                        class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Japan Beer</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.
+                                            This content is a little bit longer.This is a wider card with supporting
+                                            text below
+                                            as a natural
+                                            lead-in to additional content.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary disabled">S</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">L</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane" id="pane5">
+                        <div class="row">
+                            <div class="col-md-4 mb-4">
+                                <div class="card box-shadow border-0 h-100">
+                                    <img src="https://images.unsplash.com/photo-1525974160448-038dacadcc71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80"
+                                        class="card-img-top" alt="杯具組">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-center">Tokuri</h5>
+                                        <p class="card-text">This is a wider card with supporting text below as a
+                                            natural
+                                            lead-in to additional content.
+                                            This content is a little bit longer.This content is a little bit longer.</p>
+                                    </div>
+                                    <div class="card-footer border-top-0 text-center bg-white">
+                                        <div class="btn-group btn-group-sm">
+                                            <a href="product.html" class="btn btn-outline-secondary disabled">S</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">M</a>
+                                            <a href="product.html" class="btn btn-outline-secondary">L</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--remove Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    是否取消此筆訂單?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-outline-danger px-5">確認刪除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 六角血拼賣賣</li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-instagram"></i>
+                        Instagrame
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-facebook-square"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">About</a>
+                </li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            //編輯的 Modal 事件
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title');
+                var modal = $(this);
+                modal.find('.modal-title').text('確認刪除 ' + title);
+            });
+
+            //list-group 選單網址列賦予值 事件
+            $(".sakeList a").click(function (e) {
+                e.preventDefault();
+                $(this).tab('show');
+            });
+
+            $(".sakeList a").on('shown.bs.tab', function (event) {
+                var id = $(event.target).attr("href").substr(1);
+                window.location.hash = '#!' + id;
+            });
+
+            var hash = window.location.hash.replace('!', '');
+            var element = '.sakeList a[href="' + hash + '"]';
+            $(element).tab('show');
+        });
+    </script>
+</body>
+
+</html>

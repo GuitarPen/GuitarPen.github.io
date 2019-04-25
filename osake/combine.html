@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角血拼賣賣</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <h1 style="margin-top: 5.5px; margin-bottom: 5.5px;">
+            <a href="#" class="navbar-brand text-hide logo">OSAKE酒專賣</a>
+        </h1>
+    </nav>
+    <section class="container py-5 main">
+        <h1 class="text-secondary text-center mb-3">商品結帳完成</h1>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="alert alert-primary alert-rounded text-center" role="alert">
+                    完成
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="table-responsive-md">
+                    <table class="table table-sm">
+                        <h4 class="text-center py-3">購買資訊</h4>
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th style="width:120px;"></th>
+                                <th>商品名稱</th>
+                                <th style="width:50px;">數量</th>
+                                <th class="text-right">小計</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#" class="text-muted" data-toggle="modal" data-title="Japan Gekkeikan Sake"
+                                        data-target="#removeModal">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">
+                                    <img src="https://images.unsplash.com/photo-1544963492-2b63254a209f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                                        alt="" class="img-thumbnail">
+                                </td>
+                                <td class="align-middle">Japan Gekkeikan Sake</td>
+                                <td class="align-middle">1 件</td>
+                                <td class="align-middle text-right">$2500</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#" class="text-muted" data-toggle="modal" data-title="Tokuri"
+                                        data-target="#removeModal">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">
+                                    <img src="https://images.unsplash.com/photo-1525974160448-038dacadcc71?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1867&q=80"
+                                        alt="" class="img-thumbnail">
+                                </td>
+                                <td class="align-middle">Tokuri</td>
+                                <td class="align-middle">1 組</td>
+                                <td class="align-middle text-right">$1000</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td class="d-flex align-items-center">
+                                    <strong>運費</strong>
+                                    <span class="ml-auto">$60</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4"></td>
+                                <td class="d-flex align-items-center">
+                                    <strong>合計</strong>
+                                    <span class="h5 mb-0 ml-auto">$3560</span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="table-responsive-md">
+                    <table class="table">
+                        <h4 class="text-center py-3">個人資料</h4>
+                        <tbody>
+                            <tr>
+                                <th style="width: 30%;">姓名</th>
+                                <td>王小明</td>
+                            </tr>
+                            <tr>
+                                <th>Email</th>
+                                <td>123*****@mail.com</td>
+                            </tr>
+                            <tr>
+                                <th>電話號碼</th>
+                                <td>09**21***4*</td>
+                            </tr>
+                            <tr>
+                                <th>國家</th>
+                                <td>Taiwan</td>
+                            </tr>
+                            <tr>
+                                <th>地址</th>
+                                <td>Kaohsiung, **區**街***號</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--remove Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    是否取消此筆訂單?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-outline-danger px-5">確認刪除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 六角血拼賣賣</li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-instagram"></i>
+                        Instagrame
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-facebook-square"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">About</a>
+                </li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            //編輯的 Modal 事件
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title');
+                var modal = $(this);
+                modal.find('.modal-title').text('確認刪除 ' + title);
+            });
+        });
+    </script>
+</body>
+
+</html>

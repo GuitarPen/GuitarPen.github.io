@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>六角血拼賣賣</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+        integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <h1 style="margin-top: 5.5px; margin-bottom: 5.5px;">
+            <a href="#" class="navbar-brand text-hide logo">OSAKE酒專賣</a>
+        </h1>
+        <div class="dropdown ml-auto">
+            <button class="btn btn-sm btn-cart" type="button" data-toggle="dropdown" aria-haspopup="true"
+                aria-expanded="false">
+                <div class="h4 mb-0">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+                <span class="badge badge-pill badge-danger">2</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right" style="min-width: 300px;">
+                <form class="px-4 py-3">
+                    <table class="table table-sm">
+                        <thead>
+                            <h6>已選擇商品</h6>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#" class="text-muted" data-toggle="modal" data-title="Japan Gekkeikan Sake"
+                                        data-target="#removeModal">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">Japan Gekkeikan Sake</td>
+                                <td class="align-middle" style="width:50px;">1 件</td>
+                                <td class="align-middle text-right">$2500</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle text-center">
+                                    <a href="#" class="text-muted" data-toggle="modal" data-title="Tokuri"
+                                        data-target="#removeModal">
+                                        <i class="far fa-trash-alt"></i>
+                                    </a>
+                                </td>
+                                <td class="align-middle">Tokuri</td>
+                                <td class="align-middle">1 組</td>
+                                <td class="align-middle text-right">$1000</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <a href="checkout.html" class="btn btn-primary btn-block">結帳去</a>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <section class="container">
+        <ol class="breadcrumb bg-transparent">
+            <li class="breadcrumb-item"><a href="index.html">首頁</a></li>
+            <li class="breadcrumb-item"><a href="index.html#!pane2">日本酒</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Japan Gekkeikan Sake</li>
+        </ol>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="sticky-top mb-5" style="top: 10px;">
+                    <h1 class="h2">月桂冠
+                        <small class="text-secondary">上撰酒樽清酒</small>
+                    </h1>
+                    <div class="d-flex justify-content-end align-items-end">
+                        <span class="text-secondary">售價<del>$3000</del></span>
+                        <div class="h3 mb-0 ml-auto text-danger">
+                            <small>特價 NT$</small>
+                            <strong>2500</strong>
+                        </div>
+                    </div>
+                    <hr>
+                    <form action="">
+                        尺寸：
+                        <div class="btn-group btn-group-toggle btn-group-sm" data-toggle="buttons">
+                            <label class="btn btn-outline-secondary disabled">
+                                <input type="radio" name="options" id="option1" autocomplete="off" disabled> S
+                            </label>
+                            <label class="btn btn-outline-secondary disabled">
+                                <input type="radio" name="options" id="option2" autocomplete="off" disabled> M
+                            </label>
+                            <label class="btn btn-outline-secondary">
+                                <input type="radio" name="options" id="option3" autocomplete="off"> L
+                            </label>
+                        </div>
+                        <div class="input-group mt-3">
+                            <input type="number" class="form-control mr-1" value="1" max="999" min="0">
+                            <a href="#" class="btn btn-primary">加入購物車</a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <h3>悠久歷史的日本清酒</h3>
+                <p>清酒是日本的傳統酒，甚至有人稱之為日本國酒。而月桂冠在日本已有370年的歷史，長久以來在日本都是第一品牌，並且也是皇室指定御用酒之一。</p>
+                <h4 class="mt-4 mb-1 text-center">優雅的感受</h4>
+                <img class="w-100"
+                    src="https://images.unsplash.com/photo-1513240848419-cc04b90c703a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1683&q=80"
+                    alt="">
+                <h4 class="mt-4 mb-1 text-center">與美食的饗宴</h4>
+                <img class="w-100"
+                    src="https://images.unsplash.com/photo-1549634423-b788ab0dbd61?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                    alt="">
+                <h4 class="mt-4 mb-1 text-center">毫無開封的香醇</h4>
+                <img class="w-100"
+                    src="https://images.unsplash.com/photo-1544963492-2b63254a209f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1650&q=80"
+                    alt="">
+                <div class="my-3 p-2 rounded" style="background-color: #d6d6d6;">
+                    <h4 class="text-center">購物說明</h4>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, at! Totam, exercitationem
+                        repellat. Saepe facere amet
+                        expedita perferendis voluptatem dicta dignissimos tempora ut atque, rerum doloribus? Magni,
+                        blanditiis. Assumenda,
+                        distinctio!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--remove Modal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-white">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    是否取消此筆訂單?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-outline-secondary" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-outline-danger px-5">確認刪除</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-light text-muted py-5">
+        <div class="container">
+            <ul class="list-inline text-center">
+                <li class="list-inline-item">© Copright 2017 六角血拼賣賣</li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-instagram"></i>
+                        Instagrame
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">
+                        <i class="fab fa-facebook-square"></i>
+                        Facebook
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a class="text-info" href="#">About</a>
+                </li>
+            </ul>
+            <p class="text-center">Made with Bootstrap4</p>
+        </div>
+    </footer>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+        integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+        integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+        crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+            //編輯的 Modal 事件
+            $('#removeModal').on('show.bs.modal', function (event) {
+                var btn = $(event.relatedTarget);
+                var title = btn.data('title');
+                var modal = $(this);
+                modal.find('.modal-title').text('確認刪除 ' + title);
+            });
+        });
+    </script>
+</body>
+
+</html>

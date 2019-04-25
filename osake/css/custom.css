@@ -1,0 +1,60 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.btn-cart{
+    position: relative;
+}
+
+.btn-cart .badge{
+    position: absolute;
+    top: -1px;
+    right: -1px;
+}
+
+.logo{
+    display: block;
+    background-image: url(../images/logo.svg);
+    width: 120px;
+    height: 27px;
+}
+
+.jumbotron-bg{
+    background-image: url(https://images.unsplash.com/photo-1485700713933-d050abfad16d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1649&q=80);
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: 95%;
+    height: 500px;
+}
+
+.bg-black{
+    background-color: rgba(0,0,0, .65);
+}
+
+.box-shadow{
+    box-shadow: 0 3px 5px rgba(0,0,0, .16);
+    transition: box-shadow .3s;
+}
+
+.box-shadow:hover{
+    box-shadow: 0 4px 10px rgba(0,0,0, .24);  
+}
+
+.sakeList .list-group-item.active{
+    background-color: #adadad;
+    border-color: #adadad;
+}
+
+.alert-rounded{
+    border-radius: 50px;
+}
+
+.main{
+    min-height: calc(100vh - (56px + 176px));
+}
+
+.accordion.accordion-one .card:first-of-type{
+    border-bottom: 1px solid rgba(0,0,0, .125); 
+    border-bottom-right-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}

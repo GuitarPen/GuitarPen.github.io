@@ -1,0 +1,48 @@
+/*加入border-box，使元素不會增加內距及邊框的寬度*/
+*{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+/*圖片區塊元素*/
+img{
+	display: block;
+}
+/*移除藍色點擊框*/
+textarea:focus, input:focus, select:focus{
+	outline: none;
+}
+/*移除連結底線*/
+a{
+	text-decoration: none;
+}
+
+/*與float搭配使用，清除浮動區塊*/
+// 加div
+.clearfix{
+  clear: both 
+}
+// 加入父元素
+.clearfix:after{
+  content:'';
+  display:table;
+  clear:both;
+}
+.overflow{
+	overflow: hidden;
+}
+
+/*排版用*/
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.w-center{
+	display: flex;
+	justify-content: center;
+}
+.h-center{
+	display: flex;
+	align-items: center;
+}

@@ -1,0 +1,53 @@
+////////*隱藏文字*////////
+@mixin hide-text{
+	text-indent: 110%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+////////*排版用*////////
+@mixin center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin w-center{
+	display: flex;
+	justify-content: center;
+}
+
+@mixin h-center{
+	display: flex;
+	align-items: center;
+}
+
+////////*圖像*////////
+
+/*主標題旁邊的2條線*/
+@mixin text-divider{
+	content: "";
+	flex: 1;
+	border: none;
+	margin: 0 1.5rem;
+	border-top: 1px solid;
+}
+
+/*圓型*/
+@mixin circle($size,$bgcolor){
+	border-radius: 50%;
+	height: $size;
+	width: $size;
+	font-size: $size/3;
+	background:$bgcolor;
+}
+
+/*父元素要有position定位,用偽元素鑲入下面語法,還要加content:\***,font-weight: 900,才會顯現圖案*/
+@mixin label-icon($font-f,$line-height,$width,$font-size){
+	position: absolute;
+	font-family: $font-f;
+	line-height: $line-height;
+	width: $width;
+	text-align: center;
+	font-size: $font-size;
+}

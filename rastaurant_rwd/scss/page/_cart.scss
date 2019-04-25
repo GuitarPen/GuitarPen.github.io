@@ -1,0 +1,234 @@
+$contrast-color: #fff;
+$font-l: 20px;
+$font-m: 18px;
+$transition-normal: all 0.2s;
+$common-padding: 50px 4%;
+
+.cart{
+	padding: $common-padding;
+	.cart-sidebar{
+		width: 23.4%;
+		float: left;
+		h2{
+			font-size: $font-l;
+			margin-bottom: 20px;
+			p{
+				display: inline;
+			}
+		}
+		ul{
+			li{
+				a{
+					display: block;
+					color: #3D1101;
+					padding: 10px;
+					border-bottom: solid 1px;
+					transition: $transition-normal;
+					&:hover{
+						color: $contrast-color;
+						background-color: #3D1101;
+					}
+				}
+			}
+		}
+	}
+	.cart-content{
+		float: left;
+		width: 76.6%;
+		padding-left: 20px;
+		.cart-content-top{
+			.search{
+				float: left;
+				width: 66.6666%;
+				position: relative;
+				padding-left: 7px;
+				transition: $transition-normal;
+				.search-term{
+					float: left;
+					width: 100%;
+					border: 2px solid #3D1101;
+					padding: 5px;
+					font-size: 13.5px;
+					outline: none;
+				}
+				.search-button{
+					position: absolute;
+					width: 40px;
+					height: 32px;
+					right: 1px;
+					background: #3D1101;
+					color: #fff;
+					cursor: pointer;
+					padding: 0;
+				}
+			}
+			.buy{
+				float: right;
+				transition: $transition-normal;
+				a{
+					padding: 0 12px;
+					border-right: 1px solid;
+					color: #3D1101;
+					i{
+						font-size: 25px;
+						position: relative;
+						span{
+							position: absolute;
+							@include circle(17px,#FF5E45);
+							font-size: 10px;
+							top: -6px;
+							right: -7px;
+							text-align: center;
+							line-height: 16px;
+							color: #fff;
+							border: 1px solid #fff;
+						}
+					}
+					&:hover{
+						color: #8A2400;
+					}
+				}
+			}
+			@include iphone(){
+				.search{
+					float: none;
+					width: 100%;
+					padding: 0;
+				}
+				.buy{
+					margin-top: 20px;
+				}
+			}
+		}
+		@include mobile(){
+			.cart-content-top{
+				margin-top: 23px;
+			}
+		}
+		.goods{
+			margin-top: 30px;
+			.product{
+				float: left;
+				width: 33.3333%;
+				padding: 7px;
+				transition: $transition-normal;
+				.product-padding{
+					box-shadow: 3px 4px 10px #d0d0d0;
+					position: relative;
+					.label{
+						position: absolute;
+						top: -8px;
+						right: -6px;
+						.middle{
+							position: absolute;
+							top: 22px;
+							right: -25px;
+							color: #fff;
+							height: 0;
+							width: 115px;
+							border-style: solid;
+							border-width: 0 25px 25px 25px;
+							border-color: transparent transparent #00CC99 transparent;
+							transform: rotate(45deg);
+							span{
+								display: block;
+								margin-top: 4px;
+								margin-left: 1px;
+							}
+						}
+						.top,.bottom{
+							position: absolute;
+							border-style: solid;
+							border-width: 0 5px 5px 5px;
+							border-color: transparent transparent #00856f transparent;
+							top: 3px;
+							right: 77px;
+						}
+						.bottom{
+							top: 82px;
+							right: -2px;
+							transform: rotate(90deg);
+						}
+					}
+					.product-name{
+						margin: 12px 0;
+						text-align: center;
+						font-size: $font-l;
+						.heart{
+							position: absolute;
+							top: 6px;
+							left: 7px;
+							a{
+								color: $contrast-color;
+							}
+						}
+						.english-title{
+							font-size: 12px;
+							padding: 5px 0;
+						}
+						hr{
+							width: 50%;
+							height: 1px;
+							background-color: #3D1101;
+							border: 0;
+						}
+						.price{
+							margin: 20px 0;
+							font-family: Roboto;
+							font-style: italic;
+							font-weight: bold;
+						}
+						button{
+							width: 92%;
+							font-size: 16px;
+							padding: 4px;
+							margin-bottom: 10px;
+							color: #ff5e45;
+							background-color: #efe9e7;
+							border: 2px solid #ff5e45;
+							p{
+								display: inline;
+							}
+							&:hover{
+								color: #fff;
+								background-color: #ff5e45;
+								background-image: none;
+							}
+							&:active{
+								-webkit-box-shadow: none;
+								box-shadow: none;
+								background-color: #e2503d;
+								border: 2px solid #e2503d;
+							}
+							&:focus{
+								background-image: none;
+							}
+						}
+					}
+				}
+			}
+			@include pad(){
+				.product{
+					width: 50%;
+				}
+			}
+			@include iphone(){
+				.product{
+					float: none;
+					width: 100%;
+				}
+			}
+		}
+	}
+	@include mobile(){
+		.cart-sidebar{
+			width: 100%;
+			float: none;
+		}
+		.cart-content{
+			width: 100%;
+			float: none;
+			padding-left: 0;
+		}
+	}
+}
