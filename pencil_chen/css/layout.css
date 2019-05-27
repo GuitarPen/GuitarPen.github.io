@@ -1,0 +1,40 @@
+@charset "UTF-8";
+@import url(reset.css);
+
+body {
+	margin: 0;
+	background-color: #fff;
+}
+#gotop {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 20px;    
+    color: white;
+    cursor: pointer;
+}
+.wrapper{
+	width: 1920px;
+	position: relative;
+	left: 50%;
+	margin-left: -960px;
+}
+.wrapper img{
+	width: 100%;
+}
+.md {
+	width: 1620px;
+	margin-left: -810px;
+	display: none;
+}
+@media all and (max-width : 1450px) {
+body {
+	background-size: 1450px auto;
+}
+.md {
+	display: block;
+}
+.lg {
+	display: none;
+}
+}
