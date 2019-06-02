@@ -58,3 +58,7 @@ body{
     border-bottom-right-radius: .25rem;
     border-bottom-left-radius: .25rem;
 }
+
+.dropdown-menu{
+    z-index: 1500;
+}
