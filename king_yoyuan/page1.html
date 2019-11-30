@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>金祐園</title>
+<link rel="stylesheet" href="css/reset.css">
+<style type="text/css">
+body {
+	background-repeat: no-repeat;
+	margin: 0;
+	overflow-x: hidden;
+	line-height: 0;
+	background-image: url(img/page1.jpg);
+	background-position: center top;
+	background-size: 100% auto;
+}
+#menu {
+    position: absolute;
+    right: 10%;
+    left: 10%;    
+    top: 0;
+    z-index: 999;
+}
+#menu .logo {
+	display: inline-block;
+	width: 30%;
+	height: 100px;
+	float: left;
+}
+#menu nav {
+	display: inline-block;
+	width: 42%;
+	float: right;
+}
+#menu nav a {
+	display: inline-block;
+	width: 25%;
+	height: 100px;
+	float: left;
+}
+.wrapper{
+	position: relative;
+	z-index: 2;
+}
+.wrapper img{
+	visibility: hidden;
+	margin-top: -5px;
+}
+/*@media all and (min-width : 1400px) {*/
+	.wrapper img{
+		width: 100%;
+	}
+/*}*/
+/* .form {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	width: 180px;
+	right: 0;
+	z-index: 99;
+	cursor: pointer;
+} */
+</style>
+</head>
+
+<body>
+	<!-- <a href="index-.html" class="form"></a> -->
+	<div id="menu">
+		<a href="index.html" class="logo"></a>
+		<nav>
+			<a href="page1.html"></a>
+			<a href="page2.html"></a>
+			<a href="page3-1.html"></a>
+			<a href="page4.html"></a>
+		</nav>
+	</div>
+<div class="wrapper">
+	<img src="img/page1.jpg" alt="">
+	
+</div>
+
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
